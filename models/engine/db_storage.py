@@ -100,4 +100,4 @@ class DBStorage:
         elif cls is None:
             for cls in classes.values():
                 number += self.__session.query(cls).count()
-            return number
+        return number
