@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""Flask api app"""
 from flask import Flask
 from os import getenv
 from models import storage
@@ -16,7 +16,6 @@ def tearDown(program):
 
 
 if __name__ == "__main__":
-
     app.run(
         host=getenv('HBNB_API_HOST', default='0.0.0.0'),
         port=int(getenv('HBNB_API_PORT', default=5000))
